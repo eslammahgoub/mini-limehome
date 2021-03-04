@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
 
+---
+**NOTE**
+
+When run the app on the localhost you should define your own `MAP_API_key` you can find that under the folder `src/environments/` in the environment file `mapApikeyGoogle` to make it works
+
+---
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
