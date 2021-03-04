@@ -30,8 +30,7 @@ export class AppComponent {
       navigator.geolocation.getCurrentPosition((position) => {
           const latitude  = position.coords.latitude;
           const longitude = position.coords.longitude;
-          this.mapLocation.lat = latitude;
-          this.mapLocation.lng = longitude;
+          this.mapLocation = {lat: latitude, lng: longitude };
           this.message = null;
       }, (e) => {
         this.message = 'Unable to retrieve your location';
