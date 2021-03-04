@@ -12,4 +12,8 @@
     --font-color: #303030;
     --small-font-color: #858D94;
     --button-font-color: #FDFDFD;
+    --overlay-background-color: #00000091;
+    --input-border-color: #ccc;
+    --input-box-shadow-color: #ddd;
+    --warn-color: #f44336;
 }

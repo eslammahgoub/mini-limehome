@@ -1,5 +1,5 @@
 <ul class="list hotel-list" #list>
     <li *ngFor="let item of hotels;" [id]="item.place_id">
-        <lh-hotel-card [hotel]="item" [activeHotel]="_active" [centerLocation]="centerLocation"></lh-hotel-card>
+        <lh-hotel-card (bookHotel)="bookHotel.emit($event)" [hotel]="item" [activeHotel]="_active" [centerLocation]="centerLocation"></lh-hotel-card>
     </li>
 </ul>

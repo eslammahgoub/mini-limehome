@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Hotel, MapLocation } from '@models';
 
 @Component({
@@ -13,6 +13,8 @@ export class HotelCardComponent {
 
   // current location
   @Input() centerLocation: MapLocation = {lat: null, lng: null};
+
+  @Output() bookHotel: EventEmitter<Hotel> = new EventEmitter<Hotel>();
 
 
   /**

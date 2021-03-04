@@ -13,7 +13,7 @@
     <!-- <div class="price-text">{{hotel?.price}}</div> -->
     <div class="actions">
         <div class="button-container">
-            <div class="button">Book</div>
+            <div class="button" (click)="bookHotel.emit(hotel)">Book</div>
         </div>
     </div>
 </div>

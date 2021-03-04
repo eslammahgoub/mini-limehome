@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { MapViewComponent } from './map-view/map-view.component';
 import { HotelCardComponent } from './hotel-card/hotel-card.component';
 import { HotelListComponent } from './hotel-list/hotel-list.component';
+import { BookModalComponent } from './book-modal/book-modal.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { HotelListComponent } from './hotel-list/hotel-list.component';
     HeaderComponent,
     MapViewComponent,
     HotelCardComponent,
-    HotelListComponent
+    HotelListComponent,
+    BookModalComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

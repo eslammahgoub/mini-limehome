@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Hotel, MapLocation } from '@models';
 
 @Component({
@@ -24,6 +24,9 @@ export class HotelListComponent {
 
   // current Location
   @Input() centerLocation: MapLocation;
+
+  // book hotel emitter
+  @Output() bookHotel: EventEmitter<Hotel> = new EventEmitter<Hotel>();
 
   /**
    * @function

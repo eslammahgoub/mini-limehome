@@ -4,12 +4,15 @@
 <!-- Header -->
 <lh-header></lh-header>
 
+<!-- Book Dialog -->
+<lh-book-modal [hotel]="hotelToBook" (changeActive)="changeActive($event)" [active]="activeModal"></lh-book-modal>
+
 <!-- Content -->
 <div class="content" role="main">
   <!-- Messages -->
   <div class="message">{{message}}</div>
   <lh-map-view [mapLocation]="mapLocation" (hotelActivated)="setActiveHotel($event)" (hotelsChanged)="setHotels($event)"></lh-map-view>
-  <lh-hotel-list [hotels]="hotels" [active]="activeHotel" [centerLocation]="mapLocation"></lh-hotel-list>
+  <lh-hotel-list (bookHotel)="bookHotel($event)" [hotels]="hotels" [active]="activeHotel" [centerLocation]="mapLocation"></lh-hotel-list>
 </div>
 
 <!-- Bottom of the view -->

@@ -7,3 +7,6 @@
 @import 'messages';
 @import 'cards';
 @import 'lists';
+@import 'modal';
+@import 'inputs';
+@import 'forms';

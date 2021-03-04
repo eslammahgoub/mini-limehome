@@ -1,0 +1,45 @@
+/* Modal Styles */
+
+.modal-content, .modal {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+}
+  
+.modal-content {
+    background-color: var(--bg-color);
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    z-index:100;
+    overflow: auto;
+}
+  
+.modal {
+    z-index:101;
+    background-color: var(--overlay-background-color);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+  
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+}
+
+.modal-close {
+    color: var(--small-font-color);
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    cursor: pointer;
+}
