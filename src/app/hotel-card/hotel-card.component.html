@@ -1,0 +1,18 @@
+<!-- Hotel Info -->
+<div class="card" [class.card-materialized]="hotel === activeHotel">
+    <div class="media float-left">
+        <ng-container *ngIf="hotel && hotel.photos && hotel.photos.length > 0">
+            <img [src]="hotel.photos[0].getUrl()" [alt]="hotel?.name"/>
+        </ng-container>
+    </div>
+    <div class="primary-title">
+        <div class="primary-text">{{hotel?.name}}</div>
+        <div class="secondary-text">{{calcFarFromCenter(hotel?.geometry?.location)}} KM FROM THE CENTER</div>
+    </div>
+    <!-- <div class="price-text">{{hotel?.price}}</div> -->
+    <div class="actions">
+        <div class="button-container">
+            <div class="button">Book</div>
+        </div>
+    </div>
+</div>

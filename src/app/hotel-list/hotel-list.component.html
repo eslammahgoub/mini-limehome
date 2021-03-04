@@ -1,0 +1,5 @@
+<ul class="list hotel-list" #list>
+    <li *ngFor="let item of hotels;" [id]="item.place_id">
+        <lh-hotel-card [hotel]="item" [activeHotel]="_active" [centerLocation]="centerLocation"></lh-hotel-card>
+    </li>
+</ul>
