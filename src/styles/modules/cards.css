@@ -61,3 +61,13 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+.bookmark {
+    border: 10px solid var(--primary-color);
+    border-left: 0;
+    border-right: 10px solid transparent;
+    width: 20px;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 0;
+}

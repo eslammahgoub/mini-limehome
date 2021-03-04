@@ -1,5 +1,6 @@
 <!-- Hotel Info -->
 <div class="card" [class.card-materialized]="hotel === activeHotel">
+    <div class="bookmark" *ngIf="hotel === activeHotel"></div>
     <div class="media float-left">
         <ng-container *ngIf="hotel && hotel.photos && hotel.photos.length > 0">
             <img [src]="hotel.photos[0].getUrl()" [alt]="hotel?.name"/>
