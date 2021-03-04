@@ -1,0 +1,10 @@
+{
+    "/api": {
+      "target": "https://discover.search.hereapi.com/v1/discover",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }

@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    /* TYPOGRAPHY */
+    --main-font: 'Maven Pro', sans-serif;
+    
+    /* COLOR PALETTE */
+    --primary-color: #F7941D;
+    --toolbar-background-color: #EBEAE6;
+    --bg-color: #FFFFFF;
+    --font-color: #303030;
+    --small-font-color: #858D94;
+    --button-font-color: #FDFDFD;
+}

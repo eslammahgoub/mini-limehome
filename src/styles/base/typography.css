@@ -1,0 +1,19 @@
+/* Typography Styles */
+
+.button {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.primary-text {
+    font-size: 24px;
+    font-family: var(--main-font);
+    font-size: large;
+}
+
+.subhead, .secondary-text {
+    font-family: var(--main-font);
+    font-size: 14px;
+}

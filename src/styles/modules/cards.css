@@ -1,0 +1,63 @@
+/* Card Styles */
+
+.card {
+    background: var(--bg-color);
+    border-radius: 2px;
+    display: inline-block;
+    height: 224px;
+    margin: 0.2rem;
+    position: relative;
+    width: 282px;
+}
+
+.card-materialized {
+    border-radius: 4px;
+    -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    -webkit-box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.media {
+    position: relative;
+    overflow: hidden;
+}
+
+.media img {
+    position: relative;
+    height: 160px;
+    width: 108px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.title, .primary-text {
+    line-height: 1.2;
+}
+
+.primary-title {
+    padding: 24px 16px 16px;
+}
+
+.primary-text + .secondary-text, .secondary-text + .primary-text, .optional-header + .primary-text {
+    margin-top: calc(24px/2/2);
+}
+
+.subhead, .secondary-text {
+    color: var(--small-font-color);
+    text-transform: uppercase;
+}
+
+.actions {
+    box-sizing: border-box;
+    min-height: 52px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    width: 100%;
+}
+
+.action-buttons {
+    display: inline-block;
+    vertical-align: middle;
+}

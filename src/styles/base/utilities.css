@@ -1,0 +1,9 @@
+/* Utilities Styles */
+
+.spacer {
+    flex: 1;
+}
+
+.float-left {
+    float: left;
+}

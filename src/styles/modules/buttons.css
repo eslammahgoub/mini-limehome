@@ -1,0 +1,39 @@
+/* Button Styles */
+
+.menu-button {
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.button {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--button-font-color);
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.button.button-small {
+    height: 16px;
+    width: 168px;
+}
+
+.button-container .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}

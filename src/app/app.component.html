@@ -1,0 +1,16 @@
+<!-- Top the view -->
+<div id="top"></div>
+
+<!-- Header -->
+<lh-header></lh-header>
+
+<!-- Content -->
+<div class="content" role="main">
+  <!-- Messages -->
+  <div class="message">{{message}}</div>
+  <lh-map-view [mapLocation]="mapLocation" (hotelActivated)="setActiveHotel($event)" (hotelsChanged)="setHotels($event)"></lh-map-view>
+  <lh-hotel-list [hotels]="hotels" [active]="activeHotel" [centerLocation]="mapLocation"></lh-hotel-list>
+</div>
+
+<!-- Bottom of the view -->
+<div id="bottom"></div>

@@ -1,0 +1,17 @@
+/* Toolbar Styles */
+
+.toolbar {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: var(--toolbar-background-color);
+}
+
+.toolbar img {
+    margin: 0 16px;
+}
