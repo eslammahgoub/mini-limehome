@@ -1,3 +1,5 @@
+# Please read my Thoughts.md
+
 # MiniLimehome
 
 Preview [mini-limehome](https://mini-limehome.netlify.app/)
